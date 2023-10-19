@@ -11,6 +11,11 @@ public class Main {
         System.out.println("Podaj id");
         int id = scanner.nextInt();
         Osoba osoba1 = new Osoba(id,imie);
+        Osoba osoba2 = new Osoba(osoba1);
+
+        osoba.wypisywanieImienia("Jan");
+        osoba1.wypisywanieImienia("Jan");
+        osoba2.wypisywanieImienia("Jan");
 
         System.out.println("Liczba zarejestrowanych osób "+Osoba.liczbaInstancji);
 
